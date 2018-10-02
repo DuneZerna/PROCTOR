@@ -93,21 +93,13 @@ min-height: 80px;
 .active-link {
     background-color:#f3f3f3;
 }
-
-.navbar-header {
-    width: 100%;
-    text-align: center;
-    padding: 1em;
-    color: white;
-    font-size: 2em;
-}
     
 /*==============================================
     DASHBOARD STYLES    
     =============================================*/
 .div-square {
     padding:5px;
-    border:6px double #e1e1e1;
+    border:3px double #e1e1e1;
     -webkit-border-radius:8px;
    -moz-border-radius:8px;
     border-radius:8px;
