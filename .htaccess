@@ -2,3 +2,4 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 AddType application/x-httpd-php .htm .html
+Header set X-Frame-Options "allow-from https://proctor.le-techdesign.net/owncloud"
