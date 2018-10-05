@@ -57,10 +57,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                                     <?php echo htmlspecialchars($_SESSION["username"]); ?>
                                 </li>
                                 <a href="#top">Home</a>
-                                <a href="#proctor_pm">Management</a>
+                                <a href="#proctor_pm" id="menu_pm" data-toggle="collapse">Management</a>
                                 <a href="https://projects.le-techdesign.net/" target="_blank">Portfolio</a>
-                                <li><a href="https://falk1.azehosting.net:2096/" target="_blank">Mailbox</a></li>
-                                <li><a href="https://proctor.le-techdesign.net/owncloud/" target="_blank">Cloud</a></li>
+                                <a href="#proctor_mail">Mailbox</a>
+                                <a href="#proctor_cs">Cloud</a>
                                 <li><a href="#blog">Blog</a></li>
                                 <li><a href="#contact">Contact</a></li>
 
@@ -114,6 +114,16 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                                     </figcaption>
                                 </figure>
                             </div>
+                            <div class="col-md-4">
+                                <figure class="signle-service">
+                                    <img src="img/mail.png" class="img-fluid" alt="">
+                                    <figcaption class="text-center">
+                                        <h5 class="text-uppercase">Mailbox</h5>
+                                        <p>Explore how easy it is to access to your mails with MailBox.</p>
+                                        <a href="#proctor_mail" class="primary-btn d-inline-flex align-items-center">Explore<span class="lnr lnr-arrow-right"></span></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
                         </div>
 
 
@@ -139,7 +149,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </div>
     </section>
     <!-- End Banner Area -->
-    <!-- Start About Area -->
+    <!-- Start Project Management Area -->
+    <div id="scroll_pm"></div>
     <section id="proctor_pm" class="section-full gray-bg">
         <div class="container">
             <div class="row justify-content-center">
@@ -155,20 +166,47 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <div id="management" class="collapse text-white">
                 <iframe id="management_widget" src="https://proctor.le-techdesign.net/qdpm"></iframe>
             </div>
-            <!--
-            <div class="row">
+        </div>
+    </section>
+    <!-- End Project Management Area -->
+    <!-- Start Cloud Storage Area -->
+    <section id="proctor_cs" class="section-full title-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-title text-center">
+                        <p class="text-uppercase text-white">CLOUD STORAGE</p>
+                        <h3 class="text-white">This section provides the <b class="text-white">cloud storage</b> dashboard </h3>
 
-                <div class="col-md-4">
-                    <button type="button" class="primary-btn banner-btn btn btn-info" data-toggle="collapse" data-target="#management">Management</button>
-                    <div id="management" class="collapse text-white">
-                        <iframe id="management_widget" src="https://proctor.le-techdesign.net/qdpm"></iframe>
+                        <button type="button" class="primary-btn d-inline-flex align-items-center text-white" data-toggle="collapse" data-target="#ownCloud" id="ownCloud_btn">Cloud Storage</button>
                     </div>
                 </div>
             </div>
-            -->
+            <div id="ownCloud" class="collapse text-white">
+                <iframe id="ownCloud_widget" src="https://proctor.le-techdesign.net/owncloud"></iframe>
+            </div>
         </div>
     </section>
-    <!-- End About Area -->
+    <!-- End Cloud Storage Area -->
+    <!-- Start Mail Area -->
+    <section id="proctor_mail" class="section-full gray-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-title text-center">
+                        <p class="text-uppercase">MAIL</p>
+                        <h3>This section provides the <b>mail</b> dashboard </h3>
+
+                        <button type="button" class="primary-btn d-inline-flex align-items-center" data-toggle="collapse" data-target="#mail" id="mail_btn">Mail</button>
+                    </div>
+                </div>
+            </div>
+            <div id="mail" class="collapse text-white">
+                <iframe id="mail_widget" src="https://falk1.azehosting.net:2096/"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- End Mail Area -->
     <!-- Start Product Area
     <section id="services" class="title-bg section-full">
         <div class="container">
@@ -863,5 +901,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         })();
     </script>
 </body>
+<script>
+    $("#menu_pm").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#scroll_pm").offset().top
+        }, 2000);
+    });
+</script>
 
     </html>
