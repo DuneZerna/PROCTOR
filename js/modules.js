@@ -5,21 +5,21 @@ $("#menu_home").click(function () {
 });
 
 $("#menu_pm").click(function () {
-    $('#menu_pm').addClass('clicked');
+    $("#menu_pm").addClass('open');
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#scroll_pm").offset().top
     }, 1000);
 });
 
 $("#menu_cloud").click(function () {
-    $('#menu_cloud').addClass('clicked');
+    $('#menu_cloud').addClass('open');
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#scroll_cloud").offset().top
     }, 1000);
 });
 
 $("#menu_mail").click(function () {
-    $('#menu_mail').addClass('clicked');
+    $('#menu_mail').addClass('open');
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#scroll_mail").offset().top
     }, 1000);
