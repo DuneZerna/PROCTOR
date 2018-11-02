@@ -77,6 +77,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
+                
+                
                 // Redirect to login page
                 header("location: login.php");
             } else{

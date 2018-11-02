@@ -76,6 +76,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+    color: inherit; /* Search Loop Color */
 }
 
 @-ms-viewport {

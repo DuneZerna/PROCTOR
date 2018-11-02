@@ -359,6 +359,7 @@
 }
 .lnr-magnifier:before {
 	content: "\e86f";
+    color:black;
 }
 .lnr-cross:before {
 	content: "\e870";
