@@ -1,14 +1,20 @@
 /*--------------------------- Color variations ----------------------*/
 
+
 /* Medium Layout: 1280px */
+
 
 /* Tablet Layout: 768px */
 
+
 /* Mobile Layout: 320px */
+
 
 /* Wide Mobile Layout: 480px */
 
+
 /* =================================== */
+
 
 /*  Basic Style 
 /* =================================== */
@@ -46,7 +52,7 @@
 }
 
 body {
-    color: #777777;
+    color: #333;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -107,6 +113,7 @@ a:hover {
     margin: 0;
     padding: 60px;
 }
+
 
 /**
  *  Typography
@@ -617,6 +624,7 @@ th {
 
 .section-full {
     padding: 150px 0;
+    background: linear-gradient(to right, rgba(1, 130, 224, 0.2) 50%, rgba(0, 106, 212, 0.4)100%);
 }
 
 .section-half {
@@ -886,9 +894,12 @@ th {
     transition: all 0.3s ease 0s;
 }
 
+
 /************************/
 
+
 /* structure de la page */
+
 
 /************************/
 
@@ -1041,10 +1052,13 @@ th {
     padding: 15px 0;
 }
 
+
+/*jam*/
+
 .is-sticky .sticky-header {
     background: -moz-linear-gradient(left, rgba(96, 177, 244, 0.95) 0%, rgba(134, 198, 251, 0.60) 100%);
     background: -webkit-linear-gradient(left, rgba(96, 177, 244, 0.95) 0%, rgba(134, 198, 251, 0.60) 100%);
-    background: linear-gradient(to right, rgba(96, 177, 244, 0.95) 0%, rgba(134, 198, 251, 0.60) 100%);
+    background: linear-gradient(to right, rgba(204, 232, 255, 0.95) 0%, rgba(134, 198, 251, 0.60) 100%);
 }
 
 .search {
@@ -1570,8 +1584,9 @@ th {
     width: 100%;
     line-height: 40px;
     padding: 0 20px;
-    background: #fff;
-    border: none;
+    background: #daf1f7;
+    border: 1px solid;
+    border-color: rgba(222, 222, 222, 0.3);
 }
 
 .single-input input:focus {
@@ -1586,9 +1601,9 @@ th {
     padding: 0 20px;
     height: 140px;
     resize: none;
-    border: none;
-    background: #fff;
-    border: none;
+    border: 1px solid;
+    border-color: rgba(222, 222, 222, 0.3);
+    background: #daf1f7;
 }
 
 .single-input textarea:focus {
@@ -1716,8 +1731,6 @@ footer .footer-nav li a:hover {
     opacity: 0;
 }
 
-
-
 [type=radio] {
     display: none;
 }
@@ -1741,47 +1754,47 @@ footer .footer-nav li a:hover {
     transition: transform 0.4s ease;
 }
 
-#s1:checked ~ #slide4,
-#s2:checked ~ #slide5,
-#s3:checked ~ #slide1,
-#s4:checked ~ #slide2,
-#s5:checked ~ #slide3 {
+#s1:checked~#slide4,
+#s2:checked~#slide5,
+#s3:checked~#slide1,
+#s4:checked~#slide2,
+#s5:checked~#slide3 {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
     transform: translate3d(-30%, 0, -200px);
 }
 
-#s1:checked ~ #slide5,
-#s2:checked ~ #slide1,
-#s3:checked ~ #slide2,
-#s4:checked ~ #slide3,
-#s5:checked ~ #slide4 {
+#s1:checked~#slide5,
+#s2:checked~#slide1,
+#s3:checked~#slide2,
+#s4:checked~#slide3,
+#s5:checked~#slide4 {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
     transform: translate3d(-15%, 0, -100px);
 }
 
-#s1:checked ~ #slide1,
-#s2:checked ~ #slide2,
-#s3:checked ~ #slide3,
-#s4:checked ~ #slide4,
-#s5:checked ~ #slide5 {
+#s1:checked~#slide1,
+#s2:checked~#slide2,
+#s3:checked~#slide3,
+#s4:checked~#slide4,
+#s5:checked~#slide5 {
     box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19);
     transform: translate3d(0, 0, 0);
 }
 
-#s1:checked ~ #slide2,
-#s2:checked ~ #slide3,
-#s3:checked ~ #slide4,
-#s4:checked ~ #slide5,
-#s5:checked ~ #slide1 {
+#s1:checked~#slide2,
+#s2:checked~#slide3,
+#s3:checked~#slide4,
+#s4:checked~#slide5,
+#s5:checked~#slide1 {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
     transform: translate3d(15%, 0, -100px);
 }
 
-#s1:checked ~ #slide3,
-#s2:checked ~ #slide4,
-#s3:checked ~ #slide5,
-#s4:checked ~ #slide1,
-#s5:checked ~ #slide2 {
+#s1:checked~#slide3,
+#s2:checked~#slide4,
+#s3:checked~#slide5,
+#s4:checked~#slide1,
+#s5:checked~#slide2 {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
     transform: translate3d(30%, 0, -200px);
 }
@@ -1794,51 +1807,70 @@ footer .footer-nav li a:hover {
 
 #slide2 {
     background: #00BCD4;
-    background-image: url(../img/mail.png);
+    background-image: url(../img/email.png);
     background-repeat: round;
 }
 
 #slide3 {
-    background: #CDDC39
+    background: #CDDC39;
+    background-image: url(../img/cloud.png);
+    background-repeat: round;
 }
 
 #slide4 {
-    background: #FFC107
+    background: #FFC107;
 }
 
 #slide5 {
-    background: #FF5722
+    background: #FF5722;
 }
 
 .text-black {
     color: black;
 }
 
+
 /* Style the Image Used to Trigger the Modal */
+
 #myImg {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+#myImg:hover {
+    opacity: 0.7;
 }
 
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+
 /* Modal Content (Image) */
+
 .modal-content {
     margin: auto;
     display: block;
@@ -1847,7 +1879,9 @@ footer .footer-nav li a:hover {
     height: 100%;
 }
 
+
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
+
 #caption {
     margin: auto;
     display: block;
@@ -1859,18 +1893,27 @@ footer .footer-nav li a:hover {
     height: 150px;
 }
 
+
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption { 
+
+.modal-content,
+#caption {
     animation-name: zoom;
     animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
 }
 
+
 /* The Close Button */
+
 .close {
     position: absolute;
     top: 15px;
@@ -1888,8 +1931,10 @@ footer .footer-nav li a:hover {
     cursor: pointer;
 }
 
+
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+
+@media only screen and (max-width: 700px) {
     .modal-content {
         width: 100%;
     }
@@ -1899,38 +1944,53 @@ span.lnr {
     color: black;
 }
 
+
 /* SideNav Style */
 
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 100; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 100;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
 }
 
+
 /* The navigation menu links */
+
 .sidenav a {
     padding: 8px 8px 8px 32px;
-    margin-top: 
-    text-decoration: none;
+    margin-top: text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.3s;
 }
 
+
 /* When you mouse over the navigation links, change their color */
+
 .sidenav a:hover {
     color: #f1f1f1;
 }
 
+
 /* Position and style the close button (top right corner) */
+
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -1939,27 +1999,42 @@ span.lnr {
     margin-left: 50px;
 }
 
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
 #main {
     transition: margin-left .5s;
     padding: 20px;
 }
 
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
-/* To-do List Style */ 
+
+/* To-do List Style */
+
+
 /* Style the list items */
 
+
 /* Include the padding and border in an element's total width and height */
+
 * {
     box-sizing: border-box;
 }
 
+
 /* Remove margins and padding from the list */
+
 ul {
     margin: 0;
     padding: 0;
@@ -1972,7 +2047,6 @@ ul li {
     background: #eee;
     font-size: 18px;
     transition: 0.2s;
-
     /* make the list items unselectable */
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -1980,24 +2054,32 @@ ul li {
     user-select: none;
 }
 
+
 /* Set all odd list items to a different color (zebra-stripes) */
+
 ul li:nth-child(odd) {
     background: #f9f9f9;
 }
 
+
 /* Darker background-color on hover */
+
 ul li:hover {
     background: #ddd;
 }
 
+
 /* When clicked on, add a background color and strike out text */
+
 ul li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
 }
 
+
 /* Add a "checked" mark when clicked on */
+
 ul li.checked::before {
     content: '';
     position: absolute;
@@ -2011,7 +2093,9 @@ ul li.checked::before {
     width: 7px;
 }
 
+
 /* Style the close button */
+
 .close {
     position: absolute;
     right: 0;
@@ -2024,7 +2108,9 @@ ul li.checked::before {
     color: white;
 }
 
+
 /* Style the header */
+
 .header {
     background-color: #f44336;
     padding: 30px 40px;
@@ -2032,14 +2118,18 @@ ul li.checked::before {
     text-align: center;
 }
 
+
 /* Clear floats after the header */
+
 .header:after {
     content: "";
     display: table;
     clear: both;
 }
 
+
 /* Style the input */
+
 input {
     margin: 0;
     border: none;
@@ -2051,7 +2141,9 @@ input {
     color: black;
 }
 
+
 /* Style the "Add" button */
+
 .addBtn {
     padding: 10px;
     width: 25%;
