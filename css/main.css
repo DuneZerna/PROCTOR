@@ -627,6 +627,18 @@ th {
     background: linear-gradient(to right, rgba(1, 130, 224, 0.2) 50%, rgba(0, 106, 212, 0.4)100%);
 }
 
+
+/*Footer section*/
+
+.section-full-footer {
+    padding: 70px 0;
+    background-color: #222;
+    color: aliceblue;
+}
+
+
+/**/
+
 .section-half {
     padding: 75px 0;
 }
