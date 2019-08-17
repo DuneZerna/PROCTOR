@@ -1,13 +1,3 @@
-<?php
-// Initialize the session
-session_start();
-
-// Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: index.php");
-    exit;
-}
-?>
 
     <!DOCTYPE html>
     <html lang="zxx" class="no-js">
@@ -51,12 +41,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     <div class="right-bar d-flex align-items-center">
                         <nav class="d-flex align-items-center">
                             <ul class="main-menu">
-
-                                <p>
-                                    <?php echo htmlspecialchars($_SESSION["username"]); ?>
-                                </p>
-
-
                                 <a href="#top" id="menu_home">Home</a>
                                 <a href="#proctor_pm" id="menu_pm">Management</a>
                                 <a href="https://projects.le-techdesign.net/" target="_blank">Portfolio</a>
@@ -64,7 +48,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                                 <a href="#proctor_mail" id="menu_mail">Mailbox</a>
                                 <a href="#blog">Updates</a>
                                 <a href="#footer">Contact</a>
-                                <a><span onclick="openNav()">To-do List</span></a>
 
                             </ul>
                             <a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
@@ -76,6 +59,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                                 <button class="search-submit"><span class="lnr lnr-magnifier"></span></button>
                             </form>
                         </div>
+                        <ul class="main-menu">
+                            <a href="#"><span onclick="openNav()">To-do List</span></a>
+                        </ul>
                     </div>
                 </div>
             </div>
